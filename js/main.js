@@ -70,7 +70,7 @@ function dataToSheet(form, url){
 phone.forEach(el=> {
   let iti = window.intlTelInput(el, {
     preferredCountries: ['pr'],
-    utilsScript: './node_modules/intl-tel-input/build/js/utils.js',
+    utilsScript: lang==="es"?'./node_modules/intl-tel-input/build/js/utils.js':'../node_modules/intl-tel-input/build/js/utils.js',
     initialCountry: "auto",
     geoIpLookup: function(success, failure) {
       $.get("https://ipinfo.io/json", function() {}, "jsonp").always(function(resp) {
