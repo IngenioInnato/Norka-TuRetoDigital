@@ -29,7 +29,7 @@ AOS.init();
 // BEGIN validación de número telefónico
 let phone = document.querySelectorAll(".phone");
 // let form = document.forms['creditpoints'];
-let scriptURL = 'https://script.google.com/macros/s/AKfycbzUsguV6bB1EwnXsLG9bN13H_uz05Y70MEPRj4769fpKaOqkiI/exec';
+let scriptURL = 'https://script.google.com/macros/s/AKfycbw8brOrHmI3XcHBGI7bg2cxhBXcP7tfB7E9JONjmQRfkXG3mfz8C0WkqdzSAi7Q4-7z/exec';
 
 function strictValidation(input) {
   input.addEventListener('input', function() {
@@ -56,7 +56,7 @@ function dataToSheet(form, url){
   console.log('Enviando...');
   data.append("date", new Date());
   data.append("from", getFrom());
-  fetch(url, { method: 'POST', body: data})
+  fetch(url, { method: 'POST', mode: 'no-cors', body: data})
   .then(response => {
     console.log('Success!', response);
     return true;
@@ -99,15 +99,16 @@ function formToJson(a) {
 function sendEmail(a, email) {
   let e = formToJson(a);
   Email.send({
-    SecureToken: "806c4cf0-fda1-48a0-8fca-41ee86a72731",
+    SecureToken: "01722e29-2e4a-42e0-b2ed-b154aea17bb7",
     To: email,
-    From: "leads@wspusconsulting.com",
+    From: "turetodigital@gmail.com",
     Subject: "Tu Reto Digital - Nuevo lead de landing page",
     Body: `
     <h1>Datos del usuario</h1>
     <p>Nombre: ${e.name}. <br>
     Email: ${e.mail}. <br>
     Teléfono: ${e.phone}. <br>
+    País: ${e.country}. <br>
     Fue añadido en <a href="https://docs.google.com/spreadsheets/d/1DginvoqeE_QzOxTdfW2TqMiLPxXhWQ72UmrPRTsGEXo/edit?usp=sharing">Google Sheet</a>. <br>
     </p>
     `
@@ -124,11 +125,18 @@ function sendEmail(a, email) {
 
 // BEGIN Message
 function message(form) {
-  let html = `
+  let html = lang === "es"? `
   <div class="card text-white bg-success text-center py-5">
     <div class="card-body">
       <h2 class="card-title hussar">¡Muchas Gracias!</h2>
       <p class="card-text">Sus datos serán validados lo más pronto posible, ¡estamos en contacto!</p>
+    </div>
+  </div>
+  `: `
+  <div class="card text-white bg-success text-center py-5">
+    <div class="card-body">
+      <h2 class="card-title hussar">Thank you very much!</h2>
+      <p class="card-text">Your data will be validated as soon as possible, we will be in touch!</p>
     </div>
   </div>
   `;
@@ -148,9 +156,10 @@ let validation = Array.prototype.filter.call(forms, function(form) {
     } else {
       e.preventDefault();
       clearPhone(phone);
-      let sheet = dataToSheet(form, scriptURL);
+      let sheet = dataToSheet(form  , scriptURL);
       sendEmail(form, 'turetodigital@gmail.com');
       message(form)
+      console.log(sheet);
     }
     form.classList.add('was-validated');
   }, false);
