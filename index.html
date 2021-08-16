@@ -8,7 +8,7 @@
     <meta name="title" content="Home | Tu Reto Digital" />
     <meta
       name="description"
-      content="Binance Coin es la tercera moneda más importante en el mercado. Nacida en septiembre 2017 a un valor de $10 hoy está en promedio de $470 a $525 dólares."
+      content="Únete al equipo Global que hace más dinero en Forex. Genera 2,3,4,5,6,7,8 % diarios de tu capital. Manejas tu cuenta y aumentas tu capital  mientras aprendes de la industria que mueve 5.3 Trillones de dólares al día."
     />
     <meta name="keywords" content="Tu Reto Digital" />
     <meta name="robots" content="index,follow" />
@@ -22,7 +22,7 @@
     <meta property="og:title" content="Home | Tu Reto Digital" />
     <meta
       property="og:description"
-      content="Binance Coin es la tercera moneda más importante en el mercado. Nacida en septiembre 2017 a un valor de $10 hoy está en promedio de $470 a $525 dólares."
+      content="Únete al equipo Global que hace más dinero en Forex. Genera 2,3,4,5,6,7,8 % diarios de tu capital. Manejas tu cuenta y aumentas tu capital  mientras aprendes de la industria que mueve 5.3 Trillones de dólares al día."
     />
     <meta property="og:image" content="./img/logo/descripcion.png" />
 
@@ -32,7 +32,7 @@
     <meta property="twitter:title" content="Home | Tu Reto Digital" />
     <meta
       property="twitter:description"
-      content="Binance Coin es la tercera moneda más importante en el mercado. Nacida en septiembre 2017 a un valor de $10 hoy está en promedio de $470 a $525 dólares."
+      content="Únete al equipo Global que hace más dinero en Forex. Genera 2,3,4,5,6,7,8 % diarios de tu capital. Manejas tu cuenta y aumentas tu capital  mientras aprendes de la industria que mueve 5.3 Trillones de dólares al día."
     />
     <meta property="twitter:image" content="./img/logo/descripcion.png" />
 
@@ -107,6 +107,11 @@
     <!-- BEGIN Minify -->
     <link rel="stylesheet" href="./css/styles.min.css" />
     <!-- END Minify -->
+    <style>
+      .tradingview-widget-container div div {
+        height: 610px !important;
+      }
+    </style>
   </head>
   <body>
     <!-- BEGIN Loader -->
@@ -237,26 +242,39 @@
           </p>
         </div>
         <div class="col-12 pb-lg-3 pb-5 text-center">
-          <picture>
-            <source
-              srcset="./img/products/binance.webp"
-              type="image/webp"
-              alt="Binance Gráfica"
-              title="Binance Gráfica"
-              class="img-fluid aos-init aos-animate rounded shadow"
-              loading="lazy"
-              data-aos="fade-up"
-              data-aos-duration="3000"
-            />
-            <img
-              src="./img/products/binance.jpg"
-              alt="Binance Gráfica"
-              class="img-fluid aos-init aos-animate rounded shadow"
-              loading="lazy"
-              data-aos="fade-up"
-              data-aos-duration="3000"
-            />
-          </picture>
+          <!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_35c0a"></div>
+            <div class="tradingview-widget-copyright">
+              <a
+                href="https://es.tradingview.com/symbols/EURUSD/?exchange=FX"
+                rel="noopener"
+                target="_blank"
+                ><span class="blue-text">EURUSD Gráfico</span></a
+              >
+              por TradingView
+            </div>
+            <script
+              type="text/javascript"
+              src="https://s3.tradingview.com/tv.js"
+            ></script>
+            <script type="text/javascript">
+              new TradingView.widget({
+                autosize: true,
+                symbol: "FX:EURUSD",
+                interval: "D",
+                timezone: "Etc/UTC",
+                theme: "dark",
+                style: "1",
+                locale: "es",
+                toolbar_bg: "#f1f3f6",
+                enable_publishing: false,
+                save_image: false,
+                container_id: "tradingview_35c0a",
+              });
+            </script>
+          </div>
+          <!-- TradingView Widget END -->
         </div>
         <div class="w-100"></div>
         <div class="col-lg-4 pb-lg-0 pb-5 text-center">
@@ -333,7 +351,7 @@
           <!-- <h2 class="bold text-center text-danger mb-0 text-uppercase text-sha dow">Florida</h2> -->
           <picture>
             <source
-              srcset="./img/products/btc.webp"
+              srcset="./img/products/laptop.webp"
               type="image/webp"
               alt="Bitcoin"
               title="Bitcoin"
@@ -343,7 +361,7 @@
               data-aos-duration="3000"
             />
             <img
-              src="./img/products/btc.jpg"
+              src="./img/products/laptop.jpg"
               alt="Bitcoin"
               class="img-fluid aos-init aos-animate rounded shadow"
               loading="lazy"
@@ -356,7 +374,7 @@
           <!-- <h2 class="bold text-center text-danger mb-0 text-uppercase text-sha dow">Florida</h2> -->
           <picture>
             <source
-              srcset="./img/products/etc.webp"
+              srcset="./img/products/woman.webp"
               type="image/webp"
               alt="Etherium"
               title="Etherium"
@@ -366,7 +384,7 @@
               data-aos-duration="3000"
             />
             <img
-              src="./img/products/etc.jpg"
+              src="./img/products/woman.jpg"
               alt="Etherium"
               class="img-fluid aos-init aos-animate rounded shadow"
               loading="lazy"
@@ -379,7 +397,7 @@
           <!-- <h2 class="bold text-center text-danger mb-0 text-uppercase text-sha dow">Florida</h2> -->
           <picture>
             <source
-              srcset="./img/products/bnb.webp"
+              srcset="./img/products/trading.webp"
               type="image/webp"
               alt="Binance Coin"
               title="Binance Coin"
@@ -389,7 +407,7 @@
               data-aos-duration="3000"
             />
             <img
-              src="./img/products/bnb.jpg"
+              src="./img/products/trading.jpg"
               alt="Binance Coin"
               class="img-fluid aos-init aos-animate rounded shadow"
               loading="lazy"
