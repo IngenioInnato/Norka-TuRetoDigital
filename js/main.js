@@ -179,13 +179,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // BEGIN date
 
-let meses = lang === 'es' ? new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre") : new Array ("January","February","March","April","May","Junio","June","August","September","October","November","December");
-let diasSemana = lang === "es" ? new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado") : new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
-let f=new Date();
-let dayWeek = diasSemana[f.getDay()];
-let mounth = meses[f.getMonth()];
-let year = new Date().getFullYear();
-let day = f.getDate();
-document.getElementById('fecha').innerHTML = lang === "es" ? `Hoy ${dayWeek} ${mounth} ${day}, ${year}` :  `Today ${dayWeek} ${mounth} ${day}, ${year}`;
-document.getElementById('date').innerHTML = year;
+// let meses = lang === 'es' ? new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre") : new Array ("January","February","March","April","May","Junio","June","August","September","October","November","December");
+// let diasSemana = lang === "es" ? new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado") : new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+// let f=new Date();
+// let dayWeek = diasSemana[f.getDay()];
+// let mounth = meses[f.getMonth()];
+// let year = new Date().getFullYear();
+// let day = f.getDate();
+// document.getElementById('fecha').innerHTML = lang === "es" ? `Hoy ${dayWeek} ${mounth} ${day}, ${year}` :  `Today ${dayWeek} ${mounth} ${day}, ${year}`;
+// document.getElementById('date').innerHTML = year;
 // END date

@@ -1,312 +1,634 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Primary Meta Tags -->
-  <title>Home | Tu Reto Digital</title>
-  <meta name="title" content="Home | Tu Reto Digital">
-  <meta name="description"
-    content="Binance Coin is the third largest coin on the market. Born in September 2017 at a value of $10 today it is averaging $470 to $525.">
-  <meta name="keywords"
-    content="Tu Reto Digital">
-  <meta name="robots" content="index,follow" />
-  <meta name="author" content="Tu Reto Digital" />
-  <meta name="copyright" content="Tu Reto Digital" />
-  <link rel="shortcut icon" href="../img/logo/favicon.png" type="image/png">
-  <link rel="canonical" href="https://turetodigital.com/en/" />
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://turetodigital.com/en/">
-  <meta property="og:title" content="Home | Tu Reto Digital">
-  <meta property="og:description"
-    content="Binance Coin is the third largest coin on the market. Born in September 2017 at a value of $10 today it is averaging $470 to $525.">
-  <meta property="og:image" content="../img/logo/descripcion.png">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Home | Tu Reto Digital</title>
+    <meta name="title" content="Home | Tu Reto Digital" />
+    <meta
+      name="description"
+      content="Binance Coin is the third largest coin on the market. Born in September 2017 at a value of $10 today it is averaging $470 to $525."
+    />
+    <meta name="keywords" content="Tu Reto Digital" />
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="Tu Reto Digital" />
+    <meta name="copyright" content="Tu Reto Digital" />
+    <link rel="shortcut icon" href="../img/logo/favicon.png" type="image/png" />
+    <link rel="canonical" href="https://turetodigital.com/en/" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://turetodigital.com/en/" />
+    <meta property="og:title" content="Home | Tu Reto Digital" />
+    <meta
+      property="og:description"
+      content="Binance Coin is the third largest coin on the market. Born in September 2017 at a value of $10 today it is averaging $470 to $525."
+    />
+    <meta property="og:image" content="../img/logo/descripcion.png" />
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://turetodigital.com/en/">
-  <meta property="twitter:title" content="Home | Tu Reto Digital">
-  <meta property="twitter:description"
-    content="Binance Coin is the third largest coin on the market. Born in September 2017 at a value of $10 today it is averaging $470 to $525.">
-  <meta property="twitter:image" content="../img/logo/descripcion.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://turetodigital.com/en/" />
+    <meta property="twitter:title" content="Home | Tu Reto Digital" />
+    <meta
+      property="twitter:description"
+      content="Binance Coin is the third largest coin on the market. Born in September 2017 at a value of $10 today it is averaging $470 to $525."
+    />
+    <meta property="twitter:image" content="../img/logo/descripcion.png" />
 
-<!-- BEGIN Facebook Pixel y Google Analythics Code -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XGQZPVLHC0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- BEGIN Facebook Pixel y Google Analythics Code -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XGQZPVLHC0"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-XGQZPVLHC0');
-</script>
-<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '504525054244779');
-  fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=504525054244779&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Facebook Pixel Code -->
-<!-- END Facebook Pixel y Google Analythics Code -->
-<!-- BEGIN Preload fonts -->
-  <link rel="preload" href="../font/dosis-regular.woff" as="font" type="font/woff" crossorigin="anonymous">
-  <link rel="preload" href="../font/dosis-bold.woff" as="font" type="font/woff" crossorigin="anonymous">
-<!-- END Preload fonts -->
-<!-- BEGIN Minify -->
-<link rel="stylesheet" href="../css/styles.min.css">
-<!-- END Minify -->
-</head>
-<body>
-  <!-- BEGIN Loader -->
-  <div id="loader" class="d-flex justify-content-center align-items-center">
-    <div class="spinner-grow text-secondary" role="status">
-      <span class="sr-only">Cargando...</span>
-    </div>
-  </div>
-  <!-- END Loader -->
-  <!-- BEGIN Nav -->
-  <nav class="navbar navbar-light px-sm-5 px-0 bg-transparent">
-    <a class="navbar-brand" href="#">
-      <picture>
-        <source srcset="../img/logo/white.webp" type="image/webp " alt="Logotipo Tu Reto Digital" title="Logotipo Tu Reto Digital" class="img-fluid d-block" loading="lazy"> 
-        <img src="../img/logo/white.png" class="img-fluid d-block" alt="Logotipo Tu Reto Digital" loading="lazy">
-      </picture>
-    </a>
-    <div>
-      <a class="bold text-light text-decoration-none" href="../">ES</a>
-      <button class="navbar-toggler border-0 border-secondary" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link text-light text-decoration-none bold" href="#S3"><h5>Join Now!</h5></a>
-        <a class="nav-item nav-link text-light text-decoration-none bold" href="#S2"><h5>Goals 2022</h5></a>
-        <a class="nav-item nav-link text-light text-decoration-none bold" href="#footer"><h5>Contact</h5></a>
+      gtag("config", "G-XGQZPVLHC0");
+    </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "504525054244779");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=504525054244779&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- END Facebook Pixel y Google Analythics Code -->
+    <!-- BEGIN Preload fonts -->
+    <link
+      rel="preload"
+      href="../font/dosis-regular.woff"
+      as="font"
+      type="font/woff"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="../font/dosis-bold.woff"
+      as="font"
+      type="font/woff"
+      crossorigin="anonymous"
+    />
+    <!-- END Preload fonts -->
+    <!-- BEGIN Minify -->
+    <link rel="stylesheet" href="../css/styles.min.css" />
+    <!-- END Minify -->
+  </head>
+  <body>
+    <!-- BEGIN Loader -->
+    <div id="loader" class="d-flex justify-content-center align-items-center">
+      <div class="spinner-grow text-secondary" role="status">
+        <span class="sr-only">Cargando...</span>
       </div>
     </div>
-  </nav>
-  <!-- END Nav -->
+    <!-- END Loader -->
+    <!-- BEGIN Nav -->
+    <nav class="navbar navbar-light px-sm-5 px-0 bg-transparent">
+      <a class="navbar-brand" href="#">
+        <picture>
+          <source
+            srcset="../img/logo/white.webp"
+            type="image/webp "
+            alt="Logotipo Tu Reto Digital"
+            title="Logotipo Tu Reto Digital"
+            class="img-fluid d-block"
+            loading="lazy"
+          />
+          <img
+            src="../img/logo/white.png"
+            class="img-fluid d-block"
+            alt="Logotipo Tu Reto Digital"
+            loading="lazy"
+          />
+        </picture>
+      </a>
+      <div>
+        <a class="bold text-light text-decoration-none" href="../">ES</a>
+        <button
+          class="navbar-toggler border-0 border-secondary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a
+            class="nav-item nav-link text-light text-decoration-none bold"
+            href="#S3"
+            ><h5>Join Now!</h5></a
+          >
+          <a
+            class="nav-item nav-link text-light text-decoration-none bold"
+            href="#S2"
+            ><h5>Goals 2022</h5></a
+          >
+          <a
+            class="nav-item nav-link text-light text-decoration-none bold"
+            href="#footer"
+            ><h5>Contact</h5></a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- END Nav -->
 
-  <!-- BEGIN Section 1 -->
-  <section id="S1" class="container py-5" style="border-radius: 10px 10px 0 0;">
-    <div class="row">
-      <div class="col-xl-6 col-lg-4 d-lg-flex d-none"></div>
-      <div class="col-xl-6 col-lg-8 col-12 py-5" id="app">
-        <h2 class="h1 bold text-center text-secondary mb-0 text-uppercase text-shadow mb-3">Join our team TODAY and receive 2.2% daily in earnings</h2>
-        <h1 class="h2 text-center mb-4">Binance Coin is the third largest coin on the market. Born in September 2017 at a value of $10 today it is averaging $470 to $525.</h1>
-        <!-- <h2 class="text-center bold mb-5 text-primary">This promotion is valid for:</h2>
+    <!-- BEGIN Section 1 -->
+    <section
+      id="S1"
+      class="container py-5"
+      style="border-radius: 10px 10px 0 0"
+    >
+      <div class="row">
+        <div class="col-xl-6 col-lg-4 d-lg-flex d-none"></div>
+        <div class="col-xl-6 col-lg-8 col-12 py-5" id="app">
+          <h2
+            class="
+              h1
+              bold
+              text-center text-secondary
+              mb-0
+              text-uppercase text-shadow
+              mb-3
+            "
+          >
+            JOIN THE GLOBAL TEAM MAKING THE MOST MONEY IN FOREX
+          </h2>
+          <h1 class="h2 text-center mb-4">
+            Generate 2,3,4,5,6,7,8 % of your capital daily. Manage your account
+            and increase your capital while learning about the industry that
+            moves 5.3 Trillion dollars a day.
+          </h1>
+          <!-- <h2 class="text-center bold mb-5 text-primary">This promotion is valid for:</h2>
         <contdown simple-count-down="false" final-message="Oferta Agotada"></contdown> -->
-        <div class="text-center mt-5">
-        <a class="btn btn-primary px-5 py-3 shadow" href="#S3"> 
-          <span class="h1 bold text-light text-shadow text-uppercase">Join our team TODAY!</span><br>
-          <span class="h6 text-dark"><small>Coupon limited to 500 participants.</small></span>
-        </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- BEGIN Section 2 -->
-  <!-- END Section 2 -->
-  <section id="S2" class="container pt-5 pb-5">
-    <div class="row justify-content-center">
-      <div class="col-8">
-        <h2 class="display-5 bold text-center text-primary mb-0 text-uppercase text-shadow mb-3">LEARN TO MULTIPLY<br>BNB Binance Coin</h2>
-        <p class="h3 text-center mb-4">In 10,20,30,60,90 DAYS<br>1000 Binance Coin at $1,000 = $1,000,000<br>Projected to December 2021 $1,000+<br>Projection to 2022 $5,000+<br>Capitalize, Bitcoin already flew, this is the new opportunity!</p>
-      </div>
-      <div class="col-12 pb-lg-3 pb-5 text-center">
-        <picture>
-          <source srcset="../img/products/binance.webp" type="image/webp" alt="Binance" title="Binance" class="img-fluid aos-init aos-animate rounded shadow" loading="lazy" data-aos="fade-up" data-aos-duration="3000">
-          <img src="../img/products/binance.jpg" alt="Binance" class="img-fluid aos-init aos-animate rounded shadow" loading="lazy" data-aos="fade-up" data-aos-duration="3000">
-        </picture>
-      </div>
-      <div class="w-100"></div>
-      <div class="col-lg-4 pb-lg-0 pb-5 text-center">
-        <!-- <h2 class="bold text-center text-danger mb-0 text-uppercase text-shadow">Vacaciones</h2> -->
-        <picture>
-          <source srcset="../img/products/playa.webp" type="image/webp" alt="Beach" title="Beach" class="img-fluid aos-init aos-animate rounded shadow" loading="lazy" data-aos="fade-up" data-aos-duration="3000">
-          <img src="../img/products/playa.jpg" alt="Beach" class="img-fluid aos-init aos-animate rounded shadow" loading="lazy" data-aos="fade-up" data-aos-duration="3000">
-        </picture>
-      </div>
-      <div class="col-lg-4 pb-lg-0 pb-5 text-center">
-        <!-- <h2 class="bold text-center text-danger mb-0 text-uppercase text-shadow">Coche</h2> -->
-        <picture>
-          <source srcset="../img/products/casa.webp" type="image/webp" alt="House" title="House" class="img-fluid aos-init aos-animate rounded shadow" loading="lazy" data-aos="fade-up" data-aos-duration="3000">
-          <img src="../img/products/casa.jpg" alt="House" class="img-fluid aos-init aos-animate rounded shadow" loading="lazy" data-aos="fade-up" data-aos-duration="3000">
-        </picture>
-      </div>
-      <div class="col-lg-4 pb-lg-0 pb-5 text-center">
-        <!-- <h2 class="bold text-center text-danger mb-0 text-uppercase text-sha dow">Florida</h2> -->
-        <picture>
-          <source srcset="../img/products/coche-vacaciones.webp" type="image/webp" alt="Holiday" title="Holiday" class="img-fluid aos-init aos-animate rounded shadow" loading="lazy" data-aos="fade-up" data-aos-duration="3000">
-          <img src="../img/products/coche-vacaciones.jpg" alt="Holiday" class="img-fluid aos-init aos-animate rounded shadow" loading="lazy" data-aos="fade-up" data-aos-duration="3000">
-        </picture>
-      </div>
-      <div class="w-100 py-lg-3 px-0"></div>
-      <div class="col-lg-4 pb-lg-0 pb-5 text-center">
-        <!-- <h2 class="bold text-center text-danger mb-0 text-uppercase text-sha dow">Florida</h2> -->
-        <picture>
-          <source srcset="../img/products/btc.webp" type="image/webp" alt="Bitcoin" title="Bitcoin" class="img-fluid aos-init aos-animate rounded shadow" loading="lazy" data-aos="fade-up" data-aos-duration="3000">
-          <img src="../img/products/btc.jpg" alt="Bitcoin" class="img-fluid aos-init aos-animate rounded shadow" loading="lazy" data-aos="fade-up" data-aos-duration="3000">
-        </picture>
-      </div>
-      <div class="col-lg-4 pb-lg-0 pb-5 text-center">
-        <!-- <h2 class="bold text-center text-danger mb-0 text-uppercase text-sha dow">Florida</h2> -->
-        <picture>
-          <source srcset="../img/products/etc.webp" type="image/webp" alt="Etherium" title="Etherium" class="img-fluid aos-init aos-animate rounded shadow" loading="lazy" data-aos="fade-up" data-aos-duration="3000">
-          <img src="../img/products/etc.jpg" alt="Etherium" class="img-fluid aos-init aos-animate rounded shadow" loading="lazy" data-aos="fade-up" data-aos-duration="3000">
-        </picture>
-      </div>
-      <div class="col-lg-4 pb-lg-0 pb-5 text-center">
-        <!-- <h2 class="bold text-center text-danger mb-0 text-uppercase text-sha dow">Florida</h2> -->
-        <picture>
-          <source srcset="../img/products/bnb.webp" type="image/webp" alt="Binance Coin" title="Binance Coin" class="img-fluid aos-init aos-animate rounded shadow" loading="lazy" data-aos="fade-up" data-aos-duration="3000">
-          <img src="../img/products/bnb.jpg" alt="Binance Coin" class="img-fluid aos-init aos-animate rounded shadow" loading="lazy" data-aos="fade-up" data-aos-duration="3000">
-        </picture>
-      </div>
-    </div>
-  </section>
-  <!-- END Section 2 -->
-  <section id="S2-3" class="py-5 px-lg-3 px-5 container">
-    <div class="row justify-content-center py-5">
-      <div class="col-12 px-lg-5 justify-content-center">
-        <div class="embed-responsive embed-responsive-16by9 mb-3">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RJYI42Ovcrk" allowfullscreen></iframe>
-        </div>
-        <blockquote class="blockquote">
-          <p class="mb-0 text-secondary">Financial freedom is at your fingertips, leverage is essential and teamwork will lead you to success!</p>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-  <!-- END Section 3 -->
-   <section id="S3" class="pb-5 px-lg-3 px-5 container">
-    <div class="row justify-content-center py-5" data-aos="fade-up" data-aos-duration="3000">
-      <div class="col-lg-8">
-        <h2 class="text-center bold mb-5 text-primary"><span id="fecha" class="text-uppercase"></span><br>Pre-release for the heads (Leaders)</h2>
-      </div>
-      <div class="col-lg-8">
-        <form class="needs-validation" name="turetodigital" novalidate>
-          <div class="form-row">
-            <div class="col-lg-6 mb-3">
-              <label for="name">Name *</label>
-              <input name="name" type="text" class="form-control form-control-lg" id="name" placeholder="Name" value="" maxlength="28"
-                required>
-              <div class="valid-tooltip">
-                Excellent!
-              </div>
-              <div class="invalid-tooltip">
-                Please add your name.
-              </div>
-            </div>
-            <div class="col-lg-6 mb-3">
-              <label for="mail">Email *</label>
-              <input name="mail" type="email" id="mail" class="form-control form-control-lg" placeholder="Email" maxlength="45"
-                required>
-              <div class="valid-tooltip">
-                Very good!
-              </div>
-              <div class="invalid-tooltip">
-                Please add your email address correctly.
-              </div>
-            </div>
+          <div class="text-center mt-5">
+            <a class="btn btn-primary px-5 py-3 shadow" href="#S3">
+              <span class="h1 bold text-light text-shadow text-uppercase"
+                >Join our team TODAY!</span
+              ><br />
+              <span class="h6 text-dark"
+                ><small>Coupon limited to 500 participants.</small></span
+              >
+            </a>
           </div>
-
-          <div class="form-row">
-            <div class="col-lg-6 mb-3">
-              <label for="phone">Teléfono *</label>
-              <input value="+1" autocomplete="nope" name="phone" type="tel" id="phone" class="form-control form-control-lg phone" pattern="^\+[1-9]{1}[0-9]{3,14}$"
-                minlength="8" maxlength="30" required>
-              <div class="valid-tooltip">
-                Excellent!
-              </div>
-              <div class="invalid-tooltip phone-invalid">
-                Excuse me, please add a valid phone number.
-              </div>
-            </div>
-            <div class="col-lg-6 mb-3">
-              <label for="country">Country *</label>
-              <input name="country" type="text" class="form-control form-control-lg" id="country" placeholder="Country" value="" maxlength="28"
-                required>
-              <div class="valid-tooltip">
-                Excellent!
-              </div>
-              <div class="invalid-tooltip">
-                Please add your country correctly.
-              </div>
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="col-lg-12 mb-3">
-              <div class="custom-control custom-checkbox mb-1">
-                <input name="agree2" type="checkbox" class="custom-control-input" id="agree2" required checked>
-                <label class="custom-control-label h5" for="agree2"><a href="../politicas"> I accept privacy policy</a></label>
-              </div>
-            </div>
-          </div>
-
-          <div class="form-row">
-            <button id="inputSubmit" class="btn btn-primary text-light btn-lg w-100 shadow"
-              type="submit"><h3 class="mb-0 bold text-shadow py-2">Join Now!</h3>
-            <small></small></button>
-          </div>
-      </form>
-      </div>
-    </div>
-  </section>
-  <!-- BEGIN SECCIÓN 4 -->
-  <section id="S4" class="container p-5" style="border-radius: 0 0 10px 10px;">
-    <div class="row text-center" style="justify-content: space-evenly;">
-      <div class="col-lg-8">
-        <h2 class="text-primary text-center bold mb-4 text-shadow h1">TESTIMONIALS</h2>
-      </div>
-      <div class="w-100"></div>
-      <div class="col-lg-4 mb-lg-0 mb-5">
-        <div class="embed-responsive embed-responsive-4by3 shadow rounded">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fE5Q-phNi6g"></iframe>
         </div>
       </div>
-      <div class="col-lg-4 mb-lg-0 mb-5">
-        <div class="embed-responsive embed-responsive-4by3 shadow rounded">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GNjtUFxaW0M"></iframe>
+    </section>
+    <!-- BEGIN Section 2 -->
+    <!-- END Section 2 -->
+    <section id="S2" class="container pt-5 pb-5">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <h2
+            class="
+              display-5
+              bold
+              text-center text-primary
+              mb-0
+              text-uppercase text-shadow
+              mb-3
+            "
+          >
+            YOU OPERATE FROM YOUR COMPUTER ANYWHERE THERE IS INTERNET
+          </h2>
+          <p class="h3 text-center mb-4">
+            We create a trading plan tailored to your lifestyle and budget.<br />Regardless
+            of what you do now, this skill will lead you to the financial
+            freedom you desire.
+          </p>
+        </div>
+        <div class="col-12 pb-lg-3 pb-5 text-center">
+          <picture>
+            <source
+              srcset="../img/products/binance.webp"
+              type="image/webp"
+              alt="Binance"
+              title="Binance"
+              class="img-fluid aos-init aos-animate rounded shadow"
+              loading="lazy"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            />
+            <img
+              src="../img/products/binance.jpg"
+              alt="Binance"
+              class="img-fluid aos-init aos-animate rounded shadow"
+              loading="lazy"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            />
+          </picture>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-lg-4 pb-lg-0 pb-5 text-center">
+          <!-- <h2 class="bold text-center text-danger mb-0 text-uppercase text-shadow">Vacaciones</h2> -->
+          <picture>
+            <source
+              srcset="../img/products/playa.webp"
+              type="image/webp"
+              alt="Beach"
+              title="Beach"
+              class="img-fluid aos-init aos-animate rounded shadow"
+              loading="lazy"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            />
+            <img
+              src="../img/products/playa.jpg"
+              alt="Beach"
+              class="img-fluid aos-init aos-animate rounded shadow"
+              loading="lazy"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            />
+          </picture>
+        </div>
+        <div class="col-lg-4 pb-lg-0 pb-5 text-center">
+          <!-- <h2 class="bold text-center text-danger mb-0 text-uppercase text-shadow">Coche</h2> -->
+          <picture>
+            <source
+              srcset="../img/products/casa.webp"
+              type="image/webp"
+              alt="House"
+              title="House"
+              class="img-fluid aos-init aos-animate rounded shadow"
+              loading="lazy"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            />
+            <img
+              src="../img/products/casa.jpg"
+              alt="House"
+              class="img-fluid aos-init aos-animate rounded shadow"
+              loading="lazy"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            />
+          </picture>
+        </div>
+        <div class="col-lg-4 pb-lg-0 pb-5 text-center">
+          <!-- <h2 class="bold text-center text-danger mb-0 text-uppercase text-sha dow">Florida</h2> -->
+          <picture>
+            <source
+              srcset="../img/products/coche-vacaciones.webp"
+              type="image/webp"
+              alt="Holiday"
+              title="Holiday"
+              class="img-fluid aos-init aos-animate rounded shadow"
+              loading="lazy"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            />
+            <img
+              src="../img/products/coche-vacaciones.jpg"
+              alt="Holiday"
+              class="img-fluid aos-init aos-animate rounded shadow"
+              loading="lazy"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            />
+          </picture>
+        </div>
+        <div class="w-100 py-lg-3 px-0"></div>
+        <div class="col-lg-4 pb-lg-0 pb-5 text-center">
+          <!-- <h2 class="bold text-center text-danger mb-0 text-uppercase text-sha dow">Florida</h2> -->
+          <picture>
+            <source
+              srcset="../img/products/btc.webp"
+              type="image/webp"
+              alt="Bitcoin"
+              title="Bitcoin"
+              class="img-fluid aos-init aos-animate rounded shadow"
+              loading="lazy"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            />
+            <img
+              src="../img/products/btc.jpg"
+              alt="Bitcoin"
+              class="img-fluid aos-init aos-animate rounded shadow"
+              loading="lazy"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            />
+          </picture>
+        </div>
+        <div class="col-lg-4 pb-lg-0 pb-5 text-center">
+          <!-- <h2 class="bold text-center text-danger mb-0 text-uppercase text-sha dow">Florida</h2> -->
+          <picture>
+            <source
+              srcset="../img/products/etc.webp"
+              type="image/webp"
+              alt="Etherium"
+              title="Etherium"
+              class="img-fluid aos-init aos-animate rounded shadow"
+              loading="lazy"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            />
+            <img
+              src="../img/products/etc.jpg"
+              alt="Etherium"
+              class="img-fluid aos-init aos-animate rounded shadow"
+              loading="lazy"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            />
+          </picture>
+        </div>
+        <div class="col-lg-4 pb-lg-0 pb-5 text-center">
+          <!-- <h2 class="bold text-center text-danger mb-0 text-uppercase text-sha dow">Florida</h2> -->
+          <picture>
+            <source
+              srcset="../img/products/bnb.webp"
+              type="image/webp"
+              alt="Binance Coin"
+              title="Binance Coin"
+              class="img-fluid aos-init aos-animate rounded shadow"
+              loading="lazy"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            />
+            <img
+              src="../img/products/bnb.jpg"
+              alt="Binance Coin"
+              class="img-fluid aos-init aos-animate rounded shadow"
+              loading="lazy"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            />
+          </picture>
         </div>
       </div>
-      <div class="col-lg-4 mb-lg-0 mb-5">
-        <div class="embed-responsive embed-responsive-4by3 shadow rounded">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0jbr5VcmdjA"></iframe>
+    </section>
+    <!-- END Section 2 -->
+    <section id="S2-3" class="py-5 px-lg-3 px-5 container">
+      <div class="row justify-content-center py-5">
+        <div class="col-lg-10 px-lg-5 justify-content-center">
+          <!-- <div class="embed-responsive embed-responsive-16by9 mb-3">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/RJYI42Ovcrk"
+              allowfullscreen
+            ></iframe>
+          </div> -->
+          <p class="mb-0 text-secondary mb-3 h4">
+            &#9745; You will receive daily coaching to help you achieve your goals.
+          </p>
+          <p class="mb-0 text-secondary mb-3 h4">
+            &#9745; We are the most organized and growing Global team for our results.
+          </p>
+          <p class="mb-0 text-secondary mb-3 h4">
+            &#9745; Whatever income you need to supplement or change your complement or change your lifestyle here you can achieve it.
+          </p>
+          <p class="mb-0 text-secondary mb-3 h4">
+            &#9745; DON'T GIVE YOUR MONEY TO SCAMMERS.
+          </p>
+          <p class="mb-0 text-secondary h4">
+            &#9745; Manage your money and build wealth for future generations.
+          </p>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- END SECCIÓN 4 -->
+      </div>
+    </section>
+    <!-- END Section 3 -->
+    <section id="S3" class="pb-5 px-lg-3 px-5 container">
+      <div
+        class="row justify-content-center py-5"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
+        <div class="col-lg-8">
+          <h2 class="text-center bold mb-5 text-primary">
+            <!-- <span id="fecha" class="text-uppercase"></span><br /> -->
+            Leave us your details and we will contact you as soon as possible.
+          </h2>
+        </div>
+        <div class="col-lg-8">
+          <form class="needs-validation" name="turetodigital" novalidate>
+            <div class="form-row">
+              <div class="col-lg-6 mb-3">
+                <label for="name">Name *</label>
+                <input
+                  name="name"
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="name"
+                  placeholder="Name"
+                  value=""
+                  maxlength="28"
+                  required
+                />
+                <div class="valid-tooltip">Excellent!</div>
+                <div class="invalid-tooltip">Please add your name.</div>
+              </div>
+              <div class="col-lg-6 mb-3">
+                <label for="mail">Email *</label>
+                <input
+                  name="mail"
+                  type="email"
+                  id="mail"
+                  class="form-control form-control-lg"
+                  placeholder="Email"
+                  maxlength="45"
+                  required
+                />
+                <div class="valid-tooltip">Very good!</div>
+                <div class="invalid-tooltip">
+                  Please add your email address correctly.
+                </div>
+              </div>
+            </div>
 
-  <footer id="footer" class="container-fluid mt-5 py-5 px-5 bg-dark">
-    <div class="row align-items-center justify-content-center bg-transparent">
-      <div class="col-lg-3 text-lg-left text-center font-weight-small text-light order-lg-1 order-2 mb-lg-0 mb-5">
-        <p class="mb-0"><small>Tu Reto Digital LLC. <span id="date">2021</span></small></p>
-        <a class="d-block text-light" href="mailto:turetodigital@gmail.con"><small>turetodigital@gmail.con</small></a>
-        <a class="d-block text-light" href="./policies"><small>Privacy Policies</small></a>
-        <p class="mb-0"><small>All rights reserved.</small></p>
+            <div class="form-row">
+              <div class="col-lg-6 mb-3">
+                <label for="phone">Teléfono *</label>
+                <input
+                  value="+1"
+                  autocomplete="nope"
+                  name="phone"
+                  type="tel"
+                  id="phone"
+                  class="form-control form-control-lg phone"
+                  pattern="^\+[1-9]{1}[0-9]{3,14}$"
+                  minlength="8"
+                  maxlength="30"
+                  required
+                />
+                <div class="valid-tooltip">Excellent!</div>
+                <div class="invalid-tooltip phone-invalid">
+                  Excuse me, please add a valid phone number.
+                </div>
+              </div>
+              <div class="col-lg-6 mb-3">
+                <label for="country">Country *</label>
+                <input
+                  name="country"
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="country"
+                  placeholder="Country"
+                  value=""
+                  maxlength="28"
+                  required
+                />
+                <div class="valid-tooltip">Excellent!</div>
+                <div class="invalid-tooltip">
+                  Please add your country correctly.
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-lg-12 mb-3">
+                <div class="custom-control custom-checkbox mb-1">
+                  <input
+                    name="agree2"
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="agree2"
+                    required
+                    checked
+                  />
+                  <label class="custom-control-label h5" for="agree2"
+                    ><a href="../politicas"> I accept privacy policy</a></label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <button
+                id="inputSubmit"
+                class="btn btn-primary text-light btn-lg w-100 shadow"
+                type="submit"
+              >
+                <h3 class="mb-0 bold text-shadow py-2">Join Now!</h3>
+                <small></small>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-      <div class="col-lg-3 text-center order-lg-2 order-1">
-        <picture>
-          <source srcset="../img/logo/white.webp" type="image/webp" alt="Tu Reto Digital" title="Tu Reto Digital" class="img-fluid" loading="lazy"> 
-          <img src="../img/logo/white.png" alt="Tu Reto Digital" class="img-fluid" loading="lazy">
-        </picture>
+    </section>
+    <!-- BEGIN SECCIÓN 4 -->
+    <!-- <section id="S4" class="container p-5" style="border-radius: 0 0 10px 10px">
+      <div class="row text-center" style="justify-content: space-evenly">
+        <div class="col-lg-8">
+          <h2 class="text-primary text-center bold mb-4 text-shadow h1">
+            TESTIMONIALS
+          </h2>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-lg-4 mb-lg-0 mb-5">
+          <div class="embed-responsive embed-responsive-4by3 shadow rounded">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/fE5Q-phNi6g"
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-lg-0 mb-5">
+          <div class="embed-responsive embed-responsive-4by3 shadow rounded">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/GNjtUFxaW0M"
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-lg-0 mb-5">
+          <div class="embed-responsive embed-responsive-4by3 shadow rounded">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/0jbr5VcmdjA"
+            ></iframe>
+          </div>
+        </div>
       </div>
-      <!-- <div class="col-lg-3 d-flex order-3" style="justify-content: space-evenly;">
+    </section> -->
+    <!-- END SECCIÓN 4 -->
+
+    <footer id="footer" class="container-fluid mt-5 py-5 px-5 bg-dark">
+      <div class="row align-items-center justify-content-center bg-transparent">
+        <div
+          class="
+            col-lg-3
+            text-lg-left text-center
+            font-weight-small
+            text-light
+            order-lg-1 order-2
+            mb-lg-0 mb-5
+          "
+        >
+          <p class="mb-0">
+            <small>Tu Reto Digital LLC. <span id="date">2021</span></small>
+          </p>
+          <a class="d-block text-light" href="mailto:turetodigital@gmail.con"
+            ><small>turetodigital@gmail.con</small></a
+          >
+          <a class="d-block text-light" href="./policies"
+            ><small>Privacy Policies</small></a
+          >
+          <p class="mb-0"><small>All rights reserved.</small></p>
+        </div>
+        <div class="col-lg-3 text-center order-lg-2 order-1">
+          <picture>
+            <source
+              srcset="../img/logo/white.webp"
+              type="image/webp"
+              alt="Tu Reto Digital"
+              title="Tu Reto Digital"
+              class="img-fluid"
+              loading="lazy"
+            />
+            <img
+              src="../img/logo/white.png"
+              alt="Tu Reto Digital"
+              class="img-fluid"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <!-- <div class="col-lg-3 d-flex order-3" style="justify-content: space-evenly;">
         <a href="https://www.facebook.com/WSP-Solar-106645548088146" rel="noopener, noreferrer" target="_blank " class="rrss--fb img-fluid ">
           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="35" viewBox="0 0 28 54">
             <path id="facebook-f-brands" d="M49.055,30.375,50.507,20.6H41.429V14.26c0-2.674,1.268-5.28,5.334-5.28H50.89V.66A48.776,48.776,0,0,0,43.564,0C36.087,0,31.2,4.681,31.2,13.154V20.6H22.89v9.773H31.2V54H41.429V30.375Z" transform="translate(-22.89)" fill="#fff"></path>
@@ -318,9 +640,11 @@
           </svg>
         </a>
       </div> -->
-    </div>
-  </footer>
-  <script>let lang = "en";</script>
-  <script src="../js/main.min.js"></script>
-</body>
+      </div>
+    </footer>
+    <script>
+      let lang = "en";
+    </script>
+    <script src="../js/main.min.js"></script>
+  </body>
 </html>
